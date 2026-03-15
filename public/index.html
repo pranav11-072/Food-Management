@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Food Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <h1>Food Management System</h1>
+        <div id="auth-controls">
+            <button onclick="showSection('login-section')">Login</button>
+            <button onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <section id="login-section" class="active">
+        <h2>User Login</h2>
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="handleLogin()">Login</button>
+        <p>Don't have an account? <button onclick="handleRegister()">Register as Customer</button></p>
+    </section>
+
+    <section id="main-section">
+        <div class="layout">
+            <div id="menu-list">
+                <h2>Our Menu</h2>
+                <div id="items-grid"></div>
+            </div>
+            <div id="cart">
+                <h2>Your Order</h2>
+                <ul id="cart-items"></ul>
+                <h3 id="total">Total: $0</h3>
+                <button onclick="placeOrder()">Confirm Order</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
