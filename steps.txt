@@ -1,0 +1,5 @@
+step 1: unzip the file and save it in ur desired path or better save it in desktop 
+step 2 : after unzipping the file there will be a file in it called the same name as the zip
+step 3: go to visual studio >> go to file >> open folder >> set the path where u have save the file which u extracted from the zip >> then the file opens through the directory >> open the index.html 
+step 4: go to extensions in vs code and search for live server install it  >> i have sent a video refer that 
+step 5 : right click on the index.html and u will get few option like open with live server 
